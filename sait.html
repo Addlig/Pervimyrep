@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Пробный сайт html5</title>
+	<meta http-equiv="Content-type" content="text/html" charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="sait.css" media="all"/><!--Подключение css-->
+	<script type="text/javascript" src="sait.js"></script>  <!--подключение javascript-->
+	<link rel="shortcut icon" href="image/eee.ico" type="image/x-icon"/><!--Подключение иконки сайта-->
+</head>
+<body>
+	<div id="container"><!--создоем большой контейнер-->
+		<header><!--находится шапка сайта, для оптимизации-->
+			<h1>&lt;Crazy Ideas /&gt;</h1>
+			
+			<nav><!--меню навигации-->
+				<ul id="topmenu"><!--гаризонтальное меню-->
+					<li><!--список не нумированный-->
+						<a href="#">
+							<span>Главная</span><!--выводим все пункты-->
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Форум</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="active">
+							<span>Об авторе</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Служба поддержки</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Стол заказов</span>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<span>Мой блог</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div id="top">
+			<div class="clear"></div>
+			<div id="search">
+				<form name="search" action="#" method="get">
+					<div>
+					
+						<input type="text" name="query" placeholder="Поиск"/>
+						<input type="submit"  name="search" value=""/>
+							
+					</div>
+				</form>
+			</div>
+			<div id="auth"><!--форма авторизации-->
+				<form name="auth" action="#" method="post">
+					<div>
+						<input type="text" name="login" placeholder="Логин"/>
+						<input type="password" name="password" placeholder="Пaроль"/>
+						<input type="submit" name="auth" value="Войти"/>
+					</div>
+				</form>
+				<img src="image/nbn.png" alt=""/>
+				
+				<a href="#" id="link_register">Регистрация</a>
+				
+				<div id="links_reset">
+					<a href="#">Забыли пaроль?</a>
+					<a href="#">Забыли логин?</a>
+				</div>
+			</div>
+		</div>
+		<div id="slider">
+			<div id="course">
+				<img src="image/original.png" alt="Идея - это мысль, переходящая в действие."/>
+				<h2>Идея - это мысль, переходящая в действие.</h2>
+				<section>
+					<p> Большинство психологов XIX века рассматривали<b> идеи </b>как представления памяти и воображения.</p>
+					<p>В противоположность им <b>Вильгельм Вундт </b>определял идею как <b>«сознательное представление любого предмета или процесса внешнего мира».</b> Таким образом, он относил к идеям не только процессы памяти и воображения, но и процессы восприятия.</p>
+					<a class="more" href="#">Подробнее</a>
+				</section>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="content">
+			<div id="left">
+				<div class="block">
+					<div class="header">Идеи</div>
+					<div class="content">
+						<nav>
+							<div>	
+								<a class="active" href="#">Идеи для дома</a>
+							</div>	
+							<div>
+								<a href="#">Интерьер своими руками</a>
+							</div>
+								
+							
+							<div>
+								<a href="#">Идеи для отдыха</a>
+							</div>
+							<div>
+								<a href="#">Идеи для домохозяек</a>
+							</div>
+							<div>
+								<a href="#">Идеи бизнеса</a>
+							</div>
+							<div>
+								<a href="#">Вдохновение</a>
+							</div>
+							<div>
+								<a href="#">Саморазвитие</a>
+							</div>
+							<div>
+								<a href="#">Хобби</a>
+							</div>
+							<div>
+								<a href="#">Новости / Афиши</a>
+							</div>
+							<div>
+								<a href="#">Советы / Lifehack</a>
+							</div>
+							<div>
+								<a href="#">Интервью</a>
+							</div>
+							<div>
+								<a href="#">Пожертвования для детей</a>
+							</div>
+						</nav>
+					</div>
+				</div>
+				<div class="block">
+					<div class="header">Подписка</div>
+					<div class="content">
+						<div id="subscribe_vk">
+							<div id="subscribe">
+								<p>Подписавшись по<b> E-mail</b>, Вы будуте получать уведомления о новых статьях.</p>
+								<img src="image/mail.png" alt="Подписка"/>
+								<a href="#" class="button">Подписаться</a>
+							
+							</div>
+							<div class="clear"></div>
+							<img id="subscribe_vk_sep" src="image/lkl.png" alt="">
+							<div class="clear"></div>
+							<div id="vk">
+							<p>Добавляйтесь ко мне в друзья <b>ВКонтакте</b>! Отзывы о сайте и обо мне остовляйте на стене моего аккаунта.</p>
+							<img src="image/vk.png" alt="Мой аккаунт"/>
+							<a href="#" class="button">Мой аккаунт</a>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="header">Опрос</div>
+					<div class="content">
+						<div id="poll">
+							<p>Ваша любимая рубрика?</p>
+							<form name="poll" action="#" method="post">
+								
+
+								<div>
+									<input id="poll_id_1" type="radio" name="poll_id" value="1"/>
+									<label for="poll_id_1">Cвоими руками</label>
+								</div>
+								<div>
+									<input id="poll_id_2" type="radio" name="poll_id" value="2"/>
+									<label for="poll_id_2">Идеи</label>
+								</div>
+								
+								<div>
+									<input id="poll_id_3" type="radio" name="poll_id" value="3"/>
+									<label for="poll_id_3">Вдохновение</label>
+								</div>
+								<div>
+									<input id="poll_id_4" type="radio" name="poll_id" value="4"/>
+									<label for="poll_id_4">Саморазвитие</label>
+								</div>
+								
+								<div>
+									<input id="poll_id_5" type="radio" name="poll_id" value="5"/>
+									<label for="poll_id_5">Новости / Афиши</label>
+								</div>
+								<div>
+									<input id="poll_id_6" type="radio" name="poll_id" value="6"/>
+									<label for="poll_id_6">Советы / Lifehack</label>
+								</div>
+								
+								
+								<div>
+									<input type="submit" name="poll" value="Голосовать" class="button"/>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div id="right">
+				<div class="block">
+					<div class="header">Розыгрыш</div>
+					<div class="content">
+						<div class="free">
+							<p class="title">Если Вы желаете бесплатно получить комплект: десткую шапку и снуд...</p>
+							<img src="image/vv1.jpg" alt="Если Вы желаете бесплатно получить десткую шапку..."/>
+							<p><b>Что для этого нужно:</b></p>
+							<p>- Заполнить форму</p>
+							<p>- Подписатся на нас</p>
+							<p>- Oставить отзыв о нашем сайте</p>
+							<p class="center"><b>Заполните форму:</b></p>
+							<form name="free_course" action="#" method="post">
+								<table>
+									<tr>
+										<td>
+											<label for="free_course_email">E-mail:</label>
+										</td>
+										<td>
+											<input id="free_course_email" type="text" name="email"/>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="free_course_name">Имя:</label>
+										</td>
+										<td>
+											<input id="free_course_name" type="text" name="name"/>
+										</td>
+									</tr>
+									<tr>
+										<td colspan="2" class="center">
+											<input type="submit" name="free_course" value="Я участвую!" class="button"/>
+										</td>
+									</tr>
+								</table>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="header">Гороскоп</div>
+					<div class="content">
+						<div class="free">
+							<p class="title"><b>2018(год Собаки) </b>Своенравный и строптивый Красный Огненный Петух вот-вот передаст бразды правления<b> Желтой Земляной Собаке</b>.</br> Символу ответственному и дружелюбному. Считается, что с ним в <b>2018-й </b>придут уравновешенность, внутренний покой и порядок.</p>
+							<img src="image/rrr.jpg" alt=""/>
+							
+							<p>- <b>Нажми сюда и Вы узнаете, что ждет Вас 2018 году ...</b></p>
+							
+							
+							<div class="center">
+                                <a  href="#" class="button">Узнать</a>
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="block">
+					<div class="header">Умные цитаты</div>
+					<div class="content">
+						<div id="quote">
+							<p>Одно только несчастие существует для человека… это когда им овладевает идея, не имеющая никакого влияния на действительную жизнь или же отвлекающая его от труда.</p>
+							<p class="right"><i>Иоганн Вольфганг Гёте</i></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="center">
+				<div class="main">
+					<h1>Свежие статьи</h1>
+					<section>
+						<div class="article_img">
+							
+							<img src="image/buk.jpg" alt="10 книг, которые обязательно нужно прочитать"/>
+							<div>
+								<!--<img class="data_img" src="image/buk.png" alt=""/>-->
+								<div class="data_text">11 дек</div>
+							</div>
+						</div>	
+							<h2>10 книг, которые обязательно нужно прочитать</h2>
+							<p>1. Эрих Мария Ремарк «Жизнь взаймы» .<br/> 
+							   2. Габриэль Гарсиа Маркес «Сто лет одиночества»<br/>
+							   3. Ник Лисицкий «Сказки для взрослых детей» <br/> 
+							   4. Стиг Ларсон «Девушка с татуировкой дракона»<br/> 
+							   5. Дэниел Киз «Цветы для Элджернона» <br/> 
+							   6. Френсис Скотт Фицджеральд «Ночь нежна»<br/> 
+							   7. Франц Кафка  «Превращение»<br/> 
+							   8. Грегори Дэвид Робертс «Шантарам» <br/>
+							   9. Джером Дейвид Сэлинджер  «Над пропастью во ржи»<br/>
+							   10. Оскар Уайльд  «Портрет Дориана Грея»<br/> </p>
+							   <a class="more" href="#">Подробнее</a>
+						
+					</section>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
